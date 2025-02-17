@@ -7,7 +7,7 @@ export default function MobileMenu({ isOpen, toggle }: { isOpen: boolean; toggle
       <div className={`bg-darkGray ${isOpen ? "block" : "hidden"} sm:hidden`}>
         <div className="pt-2 pb-4 space-y-1">
           {NAV_ITEMS.map((item) => (
-            <NavLink key={item.href} mobile {...item} className="hover:bg-white/10" />
+            <NavLink key={item.href} {...item} className="block" />
           ))}
         </div>
       </div>

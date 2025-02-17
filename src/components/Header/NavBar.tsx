@@ -48,24 +48,26 @@ export default function NavBar() {
 
   return (
     <nav className={`fixed z-50 bg-darkGray h-16 w-full mx-auto transition-all delay-75 ease-linear ${isScrolled ? "shadow-md" : "shadow-none"}`}>
-      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
-      <div className={`flex justify-between items-center h-full transition-all delay-75 ease-linear p-7 ${isScrolled ? "md:px-7 md:py-8" : "md:px-14 md:py-10"}`}>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
         {/* Logo Section */}
         <Link href="#home" className="text-lg font-semibold text-white hover:text-white/80 transition-colors">
-          <Image src={Logo} alt="logo" className="transition-all delay-75 ease-linear" width={isScrolled ? 100 : 120} />
+          <Image src={Logo} alt="logo" className="transition-all delay-75 ease-linear" width={100} />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden sm:flex sm:space-x-8 sm:items-center">
+        <div className="hidden md:block">
+          <div className="ml-10 flex items-baseline space-x-4">
           {NAV_ITEMS.map((item) => (
             <NavLink key={item.href} {...item} />
           ))}
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
         <MobileMenuButton isOpen={isOpen} toggle={toggleMenu} />
+        </div>
       </div>
-      {/* </div> */}
 
       {/* Mobile Navigation */}
       <MobileMenu isOpen={isOpen} toggle={toggleMenu} />

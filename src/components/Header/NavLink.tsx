@@ -6,13 +6,11 @@ interface NavLinkProps extends NavItem {
   mobile?: boolean;
 }
 
-export default function NavLink({ href = "", label = "", className = "", mobile = false }): ReactElement<NavLinkProps> {
+export default function NavLink({ href = "", label = "", className = "" }): ReactElement<NavLinkProps> {
   return (
     <a
       href={href}
-      className={`${className} ${
-        mobile ? "block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium hover:bg-white hover:border-white" : "hover:text-darkPurple transition-all delay-75 ease-in-out"
-      }`}
+      className={`${className} rounded-md px-3 py-2 text-sm font-medium hover:text-darkPurple transition-all delay-75 ease-in-out`}
     >
       {label}
     </a>
