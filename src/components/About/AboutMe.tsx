@@ -24,17 +24,16 @@ export default function AboutMe() {
               className="space-y-4"
             >
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                Hi, I&apos;m Michael. A software engineer with {years} years and {months} months of experience.
+                Software Engineer with {years} years and {months} months of experience building full stack web applications 
+                across mid-sized and enterprise projects in financial and professional services industry.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 md:text-justify">
-                I&apos;ve worked on two client projects so far in financial services and accounting industries. 
+                Worked on client projects following Agile/Scrum methodologies, involving both microservices 
+                and monolithic architectures, which allowed me to gain hands-on experience with Docker, Kubernetes, 
+                CI/CD pipelines (Jenkins, Azure Pipelines), and cloud platforms (AWS, Azure). 
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 md:text-justify">
-                Most of my work focuses on backend development, but I do frontend development from time to time. 
-                If I would give a percentage breakdown, it would be 70% backend and 30% frontend.
-              </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                My strongest traits include adaptability, versatility, and a can-do attitude.
+                A fellow with a curious mind, valuing efficiency, and committed to continuous learning.
               </p>
             </motion.div>
           </div>
