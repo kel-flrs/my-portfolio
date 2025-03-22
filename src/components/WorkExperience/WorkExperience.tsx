@@ -16,7 +16,7 @@ const timelineItems: TimelineItem[] = [
     id: 1,
     date: 'October 2022 - Present',
     title: 'Full-Stack Software Engineer',
-    company: 'Cognizant (Formerly Magenic)',
+    company: 'Cognizant (Formerly Magenic Manila, Inc.)',
     responsibilities: [
       'Developed new features for a scheduling web application, built RESTful API endpoints, SQL stored procedures, and user interfaces from scratch.',
       'Implemented feature enhancements and bug fixes to two microservice for financial markets and bulk upload service.',

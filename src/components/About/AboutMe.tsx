@@ -24,7 +24,7 @@ export default function AboutMe() {
               className="space-y-4"
             >
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                Software Engineer with {years} years and {months} months of experience building full stack web applications 
+                Software Engineer with {years} years and {months} months of experience building backend-focused full stack web applications 
                 across mid-sized and enterprise projects in financial and professional services industry.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 md:text-justify">
